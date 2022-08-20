@@ -9,13 +9,18 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.4",
     "expo": "~46.0.8",
     "expo-status-bar": "~1.4.0",
+    "metro-config": "^0.72.1",
     "react": "18.0.0",
-    "react-native": "0.69.4"
+    "react-native": "0.69.4",
+    "react-redux": "^8.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "metro": "^0.72.1",
+    "metro-core": "^0.72.1"
   },
   "private": true
 }
