@@ -1,16 +1,16 @@
-import { StatusBar } from "expo-status-bar";
+import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { Provider } from "react-redux";
+import HomeScreen from "./screens/HomeScreen";
+import { store } from "./store";
 
 // 1) Set up redux
 // 2)
 
 export default function App() {
   return (
-    <Provider>
-      <View style={styles.container}>
-        <Text>Let's build UBER!</Text>
-      </View>
+    <Provider store ={store}>
+      <HomeScreen />
     </Provider>
   );
 }
