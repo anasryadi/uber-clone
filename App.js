@@ -7,16 +7,25 @@ import HomeScreen from "./screens/HomeScreen";
 import { store } from "./store";
 // import { NavigationContainer } from "@react-navigation/native";
 import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 // 1) Set up redux
 // 2)
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
+
   return (
     <Provider store={store}>
       <NavigationContainer>
         <SafeAreaProvider>
-          <HomeScreen />
+          <Stack.Navigator>
+            <Stack.Screen 
+            name="HomeScreen"
+            component={HomeScreen}
+            />
+          </Stack.Navigator>
+          {/* <HomeScreen /> */}
         </SafeAreaProvider>
       </NavigationContainer>
     </Provider>

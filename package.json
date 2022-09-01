@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-navigation/native": "^6.0.12",
+    "@react-navigation/native-stack": "^6.8.0",
     "@reduxjs/toolkit": "^1.8.4",
     "expo": "~46.0.8",
     "expo-status-bar": "~1.4.0",
