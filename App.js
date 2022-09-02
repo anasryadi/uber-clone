@@ -23,6 +23,16 @@ export default function App() {
             <Stack.Screen 
             name="HomeScreen"
             component={HomeScreen}
+            options={{
+              headerShown: false,
+            }}
+            />
+            <Stack.Screen 
+            name="MapScreen"
+            component={MapScreen}
+            options={{
+              headerShown: false,
+            }}
             />
           </Stack.Navigator>
           {/* <HomeScreen /> */}
